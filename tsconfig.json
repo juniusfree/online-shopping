@@ -1,6 +1,18 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es5",
+    "paths": {
+      "components/*": [
+        "components/*"
+      ],
+      "hooks/*": [
+        "hooks/*"
+      ],
+      "icons/*": [
+        "icons/*"
+      ],
+    },
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,7 +30,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitAny": false,
+    "strictNullChecks": false
   },
   "include": [
     "src"
